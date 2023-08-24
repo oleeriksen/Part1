@@ -5,6 +5,7 @@ namespace Modul1
     {
         public void Run()
         {
+            
             Console.WriteLine("Her kommer løsningen af opgave 2");
             Console.Write("Indtast et tal:");
             string input = Console.ReadLine();
