@@ -5,11 +5,14 @@ namespace Modul1
     {
         public void Run() {
             Console.WriteLine("Her kommer løsningen af opgave 1");
+            Console.Write("Indtast det første tal:");
             string input = Console.ReadLine();
-            int tal = int.Parse(input);
-            for (int idx = 1; idx <= tal; idx++) {
-                Console.WriteLine(idx);
-            }
+            int tal1 = int.Parse(input);
+            Console.Write("Indtast det andet tal:");
+            input = Console.ReadLine();
+            int tal2 = int.Parse(input);
+            int sum = tal1 + tal2;
+            Console.WriteLine("Summen er " + sum);
         }
     }
 }
