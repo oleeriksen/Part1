@@ -51,7 +51,11 @@ namespace Modul2
         void conditionalExpressions() {
             int x = 8;
 
-            string output = x <= 5 ? "resultatet er under 6" : "Forrygende! Resultatet er over 5!!!!";
+            string output;
+            if (x <= 5)
+                output = "resultatet er under 6";
+            else
+                output = "Forrygende! Resultatet er over 5!!!!";
 
             Console.WriteLine(output);
 
