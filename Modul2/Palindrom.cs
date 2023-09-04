@@ -6,7 +6,7 @@ namespace Modul2
 
         public void Run() {
 
-            while (true)
+            while (1 == 1)
             {
                 Console.WriteLine("Indtast ord (tast q for stop): ");
                 string ord = Console.ReadLine();
