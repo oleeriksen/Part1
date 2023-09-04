@@ -1,12 +1,10 @@
-﻿namespace Modul2;
+﻿namespace Modul3;
 
 class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        //new ControlStructures().Run();
-        new Palindrom().Run();
     }
 }
 
