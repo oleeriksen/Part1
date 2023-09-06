@@ -20,6 +20,9 @@ class Program
         Console.WriteLine("Og dem med et e i...");
         names = names.FindAll(name => name.Contains('e'));
         names.ForEach(name => Console.WriteLine(name));
+
+        Console.WriteLine(names.Aggregate((x, y) => x + ", " + y));
+
     }
 }
 
