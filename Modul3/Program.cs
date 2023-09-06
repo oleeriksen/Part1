@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        new Arrays().Run();
+        new Opgave3_2().Run();
     }
 }
 

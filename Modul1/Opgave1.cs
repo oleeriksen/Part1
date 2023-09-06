@@ -13,6 +13,9 @@ namespace Modul1
             int tal2 = int.Parse(input);
             int sum = tal1 + tal2;
             Console.WriteLine("Summen er " + sum);
+
+            int[] x = { 1, 2, 3 };
+
         }
     }
 }
