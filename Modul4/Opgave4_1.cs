@@ -5,6 +5,7 @@ namespace Modul4
     {
         public void Run(){
             int[] count = new int[6];
+            // bruges til tælle - antal i'ere ligger i index i-1
 
             var d = new Dice();
             int N = 1000000;
