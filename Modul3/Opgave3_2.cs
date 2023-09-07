@@ -11,7 +11,7 @@ namespace Modul3
 				Console.Write($"Intast karakter nr {i+1}: ");
 				grades[i] = Convert.ToInt32(Console.ReadLine());
             }
-			var avg = Average(grades);
+			var avg = grades.Average();
 			Console.WriteLine($"Gennemsnit: {avg}");
 			// udskriver fordeling
 			int[] allGrades = { -3, 0, 2, 4, 7, 10, 12 };
@@ -32,14 +32,6 @@ namespace Modul3
 			return count;
 			//return grades.Count(g => g == aGrade);
         }
-
-        double Average(int[] a)
-        {
-			double sum = 0;
-			foreach (int g in a)
-				sum += g;
-			return sum / a.Length;
-		}
 
     }
 
