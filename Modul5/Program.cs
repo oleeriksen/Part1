@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        TryPlayWithRemove();
+        new Opgave5_1version2().Run();
 
     }
 
