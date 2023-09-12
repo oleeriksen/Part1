@@ -25,11 +25,11 @@ class Program
 
         Console.WriteLine("[" + string.Join(",", names) + "]");
 
-        Console.WriteLine("Og dem med et e i...");
-        names = names.FindAll(name => name.Contains('e')); ;
+        Console.WriteLine("Og dem med et e i og som ender på d");
+        names = names.FindAll(name => name.Contains('e') && name.EndsWith('d')); 
         names.ForEach(name => Console.WriteLine(name));
 
-        Console.WriteLine(names.Aggregate((x, y) => x + ", " + y));
+        //Console.WriteLine(names.Aggregate((x, y) => x + ", " + y));
     }
 }
 
