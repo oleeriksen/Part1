@@ -13,7 +13,16 @@ namespace Modul5
             };
         }
 
-        // NOT FINISHED
+        public void Twist() {
+            foreach (Dice d in mDices)
+                d.Roll();
+        }
+
+        public int[] Eyes {
+            get {
+                return new int[2] { mDices[0].Eyes, mDices[1].Eyes };
+            }
+        }
     }
 }
 
