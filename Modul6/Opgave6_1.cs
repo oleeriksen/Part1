@@ -7,7 +7,7 @@ namespace Modul6
         {
             PermanentEmployee anders = new PermanentEmployee
             {
-                Name = "Ander And",
+                Name = "Anders And",
                 Address = "byvej 12",
                 Email = "peter@peter.com",
                 TaxDeduction = 5000,
@@ -51,11 +51,10 @@ namespace Modul6
 
             List<Employee> mEmp = new List<Employee>
             {
-                anders,
-                jens,
-                peter,
-                gert
+                gert, peter, anders, jens
             };
+
+            mEmp.Sort();
 
             /*foreach (Employee emp in mEmp)
             {
@@ -75,6 +74,8 @@ namespace Modul6
             }
             Console.WriteLine($"Ialt skal der betales {res} til skat");
         }
+
+
 }
 }
 

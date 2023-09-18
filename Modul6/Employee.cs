@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Modul6
 {
-    public class Employee
+    abstract public class Employee //: IComparable<Employee>
     {
         public string Name { get; set; }
         public string Address { get; set; }
@@ -12,7 +12,7 @@ namespace Modul6
         public bool IsMemberOfLunch { get; set; } = false;
         public bool IsMemberGiftbox { get; set; } = false;
 
-        public virtual int Salary { get; }
+        public abstract int Salary { get; }
 
         public int TaxToPay {
             get
@@ -60,6 +60,13 @@ namespace Modul6
             Console.WriteLine($"Nettoløn\t\t\t{nettoTxt} kr");
             Console.WriteLine("===========================================");
 
+        }
+
+        public int CompareTo(Employee? other)
+        {
+            if (other == null)
+                return 1;
+            return Name.CompareTo(other.Name);
         }
     }
 }

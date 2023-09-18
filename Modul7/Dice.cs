@@ -10,10 +10,10 @@ namespace Modul7
         {
             this.size = size;
             random = new Random();
-            Roll();
+           
         }
 
-        public void Roll()
+        public virtual void Roll()
         {
             eyes = random.Next(1, size + 1);
         }
@@ -21,10 +21,10 @@ namespace Modul7
         public int CompareTo(Dice? other)
         {
             if (other == null) return 1;
-            return Eyes.CompareTo(other.Eyes);
+            return -Eyes.CompareTo(other.Eyes);
         }
 
-        public int Eyes
+        public virtual int Eyes
         {
             get
             {
