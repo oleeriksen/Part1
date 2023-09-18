@@ -57,11 +57,23 @@ namespace Modul6
                 gert
             };
 
-            foreach (Employee emp in mEmp)
+            /*foreach (Employee emp in mEmp)
             {
                 Console.WriteLine($"{emp.Name}: brutto: {emp.Salary}");
                 emp.PrintSalaryNote();
+            }*/
+
+            double res = 0;
+            foreach (var enAnsat in mEmp)
+                res += enAnsat.Salary;
+            Console.WriteLine($"Samlet brutto {res}");
+            res = 0;
+            foreach (var enAnsat in mEmp)
+            {
+                Console.WriteLine($"{enAnsat.Name} skal betale {enAnsat.TaxToPay}");
+                res += enAnsat.TaxToPay;
             }
+            Console.WriteLine($"Ialt skal der betales {res} til skat");
         }
 }
 }

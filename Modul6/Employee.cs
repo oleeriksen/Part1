@@ -14,6 +14,15 @@ namespace Modul6
 
         public virtual int Salary { get; }
 
+        public int TaxToPay {
+            get
+            {
+                int res;
+                res = (Salary - TaxDeduction) * TaxPrecentage / 100;
+                return res;
+            }
+        }
+
         public void PrintHeader() {
             Console.WriteLine(Name);
             Console.WriteLine(Address);
