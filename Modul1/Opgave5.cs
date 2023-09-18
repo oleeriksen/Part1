@@ -4,7 +4,7 @@ namespace Modul1
     public class Opgave5
     {
         public void Run() {
-            CaseC();
+            CaseDia();
             /*
              for (int i = 0; i < 10; i++)
             {
@@ -53,6 +53,20 @@ namespace Modul1
                         output += " ";
                     else
                         output += "*";
+                }
+                Console.WriteLine(output);
+            }
+        }
+
+        void CaseDia()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                string output = "";
+                for (int j = 0; j < 10; j++)
+                {
+
+                    output +=  i == j? '*':' ';
                 }
                 Console.WriteLine(output);
             }

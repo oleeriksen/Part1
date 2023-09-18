@@ -60,6 +60,7 @@ namespace Modul6
             foreach (Employee emp in mEmp)
             {
                 Console.WriteLine($"{emp.Name}: brutto: {emp.Salary}");
+                emp.PrintSalaryNote();
             }
         }
 }

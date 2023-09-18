@@ -7,7 +7,13 @@ namespace Modul6
 
         public override int Salary => MonthlySalary;
 
-        
+        public override string NameOfType => "Fastansat";
+
+        public override string SpecLine{
+            get{
+                string salaryTxt = String.Format("{0,8}", Salary);
+                return $"Månedsløn\t\t\t{salaryTxt} kr";
+            }
+        }
     }
 }
-

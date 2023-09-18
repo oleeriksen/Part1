@@ -8,8 +8,14 @@ namespace Modul6
 
         public override int Salary => HourlySalary * Hours;
 
+        public override string NameOfType => "Deltidsansat";
 
-
+        public override string SpecLine {
+            get {
+                string salaryTxt = String.Format("{0,8}", Salary);
+                return $"{Hours} timer af {HourlySalary} kr\t\t{salaryTxt} kr";
+            }
+        }
     }
 }
 
