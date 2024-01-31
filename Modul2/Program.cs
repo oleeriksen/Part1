@@ -2,11 +2,8 @@
 
 class Program
 {
-    static void Main(string[] args)
-    {
+    static void Main(string[] args){
         Console.WriteLine("Hello, World!");
-        //new ControlStructures().Run();
-        new Palindrom().Run();
     }
 }
 
