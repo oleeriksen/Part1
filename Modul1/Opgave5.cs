@@ -56,6 +56,8 @@ namespace Modul1
                 Console.WriteLine(output);
             }
         }
+
+
         void Opgaved()
         {
             Console.WriteLine("Opgave 5d");

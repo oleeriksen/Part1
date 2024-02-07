@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args){
         Console.WriteLine("Modul2");
 
-        new Frankering().Run();
+        new Palindrom().Run();
     }
 }
 
