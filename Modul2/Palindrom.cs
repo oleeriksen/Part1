@@ -11,8 +11,6 @@ namespace Modul2
                 Console.WriteLine($"{ord} er et palindrom");
             else
                 Console.WriteLine($"{ord} er IKKE et palindrom");
-
-
         }
 
         bool IsPalindrome(string s) {
