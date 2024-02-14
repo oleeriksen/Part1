@@ -1,13 +1,15 @@
 ﻿using System;
 namespace Modul4
 {
-    public class Opgaver
+    public class Opgave3_1
     {
 
         public void Run() {
-            int[] data = { 1, 3, 5,7 };
+            int[] data = { 3, 3, 5, 5 };
             var avg = Average(data);
             Console.WriteLine($"Gennemsnit er {avg}");
+            Console.WriteLine($"Varians er {Varians(data)}");
+
         }
 
         /// <summary>
@@ -15,7 +17,22 @@ namespace Modul4
         /// Fejl hvis a er tom (længde på 0).
         /// </summary>
         double Average(int[] a) {
-            return 0;
+            double sum = 0;
+            foreach (int value in a)
+                sum += value;
+            return sum/a.Length;
+        }
+
+        double Varians(int[] a) {
+            double sum = 0;
+            var avg = Average(a);
+            foreach (int value in a)
+                sum += Math.Pow(value- avg, 2);
+            return sum / a.Length;
+        }
+
+        double Derivation(int[] a) {
+            return Math.Sqrt(Varians(a));
         }
 
         /// <summary>
