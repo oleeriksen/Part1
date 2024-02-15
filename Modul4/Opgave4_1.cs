@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Modul4
 {
-    public class Opgave3_1
+    public class Opgave4_1
     {
 
         public void Run() {
