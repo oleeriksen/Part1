@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, Modul 4");
-        new Opgave4_1().Run();
+        new Opgave4_2().Run();
     }
 
     static void f() {
