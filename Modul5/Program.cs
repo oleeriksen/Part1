@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Modul5");
-        new DiceApp().Run();
+        new Opgave1().Run();
     }
 }
 
