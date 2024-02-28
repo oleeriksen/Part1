@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Modul6
 {
-    public class DiceCup
+    public class DiceCup : IDiceCup
     {
         private List<Dice> mDices;
 
@@ -21,10 +21,11 @@ namespace Modul6
             List<int> result = new();
             foreach (Dice aDice in mDices)
                   result.Add(aDice.Eyes());
-         
+            result.Sort();
             return result;
-
         }
+
+        public int Size() { return mDices.Count; }
     }
 }
 
