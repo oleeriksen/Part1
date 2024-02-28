@@ -7,10 +7,7 @@ class Program
         Console.WriteLine("Hello - Modul 6");
 
 
-        List<int> liste = new();
-
-        liste.RemoveAll((e) => e < 4);
-        new Opgave6_2().Run();
+        new Opgave6_3().Run();
     }
 }
 
